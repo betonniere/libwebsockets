@@ -23,6 +23,9 @@ win32port/zlib/Release*/
 *.suo
 *.su
 *.m4
+*.a
+*.cmake
+*.pem
 missing
 depcomp
 install-sh
@@ -37,3 +40,11 @@ config.sub
 ar-lib
 libwebsockets.pc
 build/
+bin/
+share/
+CMakeFiles/
+/CMakeCache.txt
+/install_manifest.txt
+/lws_config.h
+/lws_config_private.h
+
