@@ -1100,7 +1100,7 @@ struct lws {
 	char tsi; /* thread service index we belong to */
 };
 
-LWS_EXTERN int log_level;
+extern int log_level;
 
 LWS_EXTERN void
 lws_close_free_wsi(struct lws *wsi, enum lws_close_status);
@@ -1347,7 +1347,7 @@ enum lws_ssl_capable_status {
 #define lws_ssl_remove_wsi_from_buffered_list(_a)
 #else
 #define LWS_SSL_ENABLED(context) (context->use_ssl)
-LWS_EXTERN int openssl_websocket_private_data_index;
+extern int openssl_websocket_private_data_index;
 LWS_EXTERN int LWS_WARN_UNUSED_RESULT
 lws_ssl_capable_read(struct lws *wsi, unsigned char *buf, int len);
 LWS_EXTERN int LWS_WARN_UNUSED_RESULT
